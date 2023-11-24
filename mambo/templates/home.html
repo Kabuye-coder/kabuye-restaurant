@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div id="main-content">
+    <div id="home-div">
+        <h1 id="menu-div">Welcome to the Food Hub and Party CourtYard.</h1>
+    </div>
+
+    <div>
+        <ul id="menu-items">
+            <li>HOME</li>
+            <li>CONTACT US</li>
+            <li>ABOUT US</li>
+        </ul>
+    </div>
+    <div id="main-body">
+        <h2>About Us</h2>
+            <p>
+                We are located in Kibuli opposite kibuli total petro station along Prince Badru Kakungulu Road.We have got
+                a variety of foods and cousines with a wide spacious place for your all venues such as birhday 
+                parties, baby  showers, meetings of any kinds among others.
+            </p>
+           <div id="pillao">
+            <h2>Pillao Section</h2>
+
+                <ul>
+                    <li class="unordered-list">Chicken Pillao</li>
+                    <li class="unordered-list">Goats Pillao</li>
+                    <li class="unordered-list">Billian Rice</li>
+                    <li class="unordered-list">Mexican Rice</li>
+                    <li class="unordered-list">White Rice</li>
+                    <li class="unordered-list">Mandi Rice</li>
+                </ul>
+           </div>
+           
+            <ul>
+                <li class="ordered-list">Chips Chicken</li>
+                <li class="ordered-list">Chips Goats Meat</li>
+                <li class="ordered-list">Chips Beef</li>
+                <li class="ordered-list">Chips Liver</li>
+                <li id="special-order">Chips Only</li>
+                <li class="ordered-list">Chicken Only</li>
+
+            </ul>
+            <div id="localfood">
+                <h2>Local Food Section</h2>
+                    <ol>
+                        <li class="ordered-list">Beef stew with food</li>
+                        <li class="ordered-list">Chicken stew with food</li>
+                        <li class="ordered-list">Goats stew with food</li>
+                        <li class="ordered-list">Beans stew with food</li>
+                        <li class="ordered-list">Cow pease with food</li>
+                        <li class="ordered-list">Chicken Luwombo with food</li>
+                        <li class="ordered-list">Beef Luwombo with food</li>
+                        <li class="ordered-list">Beef in G.nut Luwombo with food</li>
+                        <li class="ordered-list">G.nut Luwombo with food</li>
+        
+                    </ol>
+                <h2>Fast Foods</h2>
+            </div>
+            <h2>Come we eat,Mujje Tulye!</h2>
+            <img src="images/IMG-20230901-WA0016.jpg" id="image">
+            <h2>FOODS,DESCRIPTIONS AND PRICES</h2>
+            <table>
+                <tr>
+                    <th>FOOD SECTION</th>
+                    <th>DESCRIPTIONS</th>
+                    <th>PRICES</th>
+                </tr>
+                <tr>
+                    <td>Pillao Section</td>
+                    <td>Pillao is in types such as Chicken,Goats,Mandi etc</td>
+                    <td>sh.20000</td>
+                </tr>
+                <tr>
+                    <td>Local Food Section</td>
+                    <td>This is served with all food and a choice of stew</td>
+                    <td>sh.20000</td>
+
+                </tr>
+                <tr>
+                    <td>Fast Foods</td>
+                    <td>This is served with Chicken,Beef,Liver,Soups</td>
+                    <td>sh.20000</td>
+                </tr>
+                
+            </table>
+            
+            <a href="{% url 'index_page'%} ">HOME</a>
+            <a href="{% url 'contact_page'%}">CONTACT</a>
+            <a href=" {% url 'foodyard_page'%}">FOODYARD</a>
+
+
+            
+
+
+    </div>
+    
+   </div>
+</body>
+</html>

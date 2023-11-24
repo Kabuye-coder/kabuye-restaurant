@@ -1,0 +1,21 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+    <h1>Welcome to the Food HUB</h1>
+    
+    <a href="{% url 'sign_up_page'%}">Sign up</a>
+    <a href="{% url 'home_page'%}">home_page</a>
+    <a href="{% url 'contact_page'%}">Contacts</a>
+    <a href="{% url 'foodyard_page'%}">Foodyard</a>
+    <a href="{% url 'add_category_page'%}">Additional Category</a>
+    <a href="{% url 'add_dish_page'%}">Dishes</a>
+    <a href="{% url 'add_customer_page'%}">Customer</a>
+    <a href="{% url 'add_order_page'%}">Additional order page</a>
+    <a href="{% url 'add_payment_page'%}">Additional Payment page</a>
+
+{% endblock content %} 
+
+
+
+

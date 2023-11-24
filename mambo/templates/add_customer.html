@@ -1,0 +1,51 @@
+{% extends './base.html' %}
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+    <h<button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add Customer
+      </button></h>
+
+    
+
+
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">table_type</th>
+        <th scope="col">status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+          
+        {% for Customer_Table in customer %} 
+
+            <tr>
+                <th scope="row">{{Customer_Table.id}}</th>
+                <td>{{Customer_Table.table_type}}</td>
+                <td>{{Customer_Table.status}}</td>
+                <td>
+                    <a href="{% url 'edit_customer_page' Customer_Table.id %}"><i class="material-icons ms-auto text-dark cursor-pointer fa-bounce" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit customer">edit</i></a> | 
+                    <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="{% url 'delete_customer_page' Customer_Table.id %}">
+                    <i onclick="return confirm('Are you sure you want to delete this customer?')"class="material-icons text-sm me-2">delete</i></a>
+                </td>
+
+
+            </tr>
+        
+            {% endfor %}
+
+</div>
+
+
+
+
+    
+{% endblock content %} 

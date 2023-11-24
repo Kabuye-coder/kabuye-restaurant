@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function submitTask(){
+
+            var input1 = document.querySelector("#input1").value;
+            var input2 = document.querySelector("#input2").value;
+            var input3 = document.querySelector("#input3").value;
+
+            if(input1.length>0 && input2.length>0 && input3.length>0){
+                alert("Thanks for contacting us");
+            }
+            else{
+                alert("Please complete all the logins");
+            }
+
+
+
+            var li = document.getElementById("li")
+
+            li.innerHTML = document.querySelector("#input").value
+            document.querySelector("").append(li)
+
+            document.querySelector("#input1").value = ""
+            document.querySelector("#input2").value = ""
+            document.querySelector("#input3").value = ""
+
+            document.querySelector("#btn-button").disabled = true;
+
+        }
+
+        function checkInput(){
+            if(document.querySelector("#input1").value.length>0 &&
+            document.querySelector("#input2").value.length>0 &&
+            document.querySelector("#input3").value.length>0){
+                document.querySelector("#btn-button").disabled = false;
+            }
+
+            else{
+                document.querySelector("#btn-button").disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+        <h2>Contact Us</h2>
+            <form >
+                <p><input type="text" class="input-controls" id="input1" placeholder="Name"></p>
+                <p><input type="text" class="input-controls" id="input2" placeholder="Email"></p>
+                <p><input type="text" class="input-controls" id="input3" placeholder="Order"></p>
+                <ul id="task-list">
+                    <button  id="btn-button" 
+                onclick="submitTask()">submitTask</button>
+
+                </ul>
+                
+            </form>
+    <a href="{% url 'home_page' %} ">HOME</a>
+    <a href="{% url 'index_page'%}">INDEX</a>
+    <a href=" {% url 'foodyard_page'%}">FOODYARD</a>
+
+    
+ 
+
+</body>
+</html>
