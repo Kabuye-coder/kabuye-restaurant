@@ -18,5 +18,5 @@ class Migration(migrations.Migration):
                 ('table_type', models.CharField(choices=[('S', 'SINGLE'), ('D', 'DOUBLE'), ('G', 'GROUP')], max_length=25)),
                 ('status', models.CharField(choices=[('O', 'OCCUPIED'), ('V', 'VACCANT')], max_length=20)),
             ],
-        ),
+        ),  
     ]
